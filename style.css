@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500,600');
+body{
+	background-image: url('img/sense-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.wrapper{
+	overflow: hidden;
+}
+.top-nav{
+	max-width: 100%;
+	min-height: 50px;
+	background-color: #000;
+}
+.menu-btn a{
+	display: block;
+	text-align: center;
+	position: relative;
+	z-index: 5;
+	top: 10px;
+	color: #fff;
+	width: 45px;
+	margin: auto;
+}
+.drop-menu{
+	background-color: rgba(0, 0, 0, 0.82);
+	display: flex;
+	justify-content: space-around;
+	transform: translateY(-100%);
+	opacity: 0;
+	transition: 0.5s;
+}
+.drop-menu a{
+	color: #fff;
+	font-family: oswald;
+	font-size: 20px;
+	transition: 0.7s;
+	position: relative;	
+}
+.drop-menu a:hover{
+	text-decoration: none;
+	color: #fff; 
+}
+.drop-menu.active{
+	transform: translateY(0);
+	opacity: 1;
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+.toggle-menu.active{
+	color: #fff;
+}
+.toggle-menu:hover{
+	color: #fff;
+}
+.close-btn{
+	color: #fff;
+	opacity: 0;
+	transition: 0.7;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 6px;
+}
+.close-btn.active{
+	opacity: 1;
+}
+.container{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.right-container video{
+	max-width: 500px;
+	margin-top: 90px;
+	box-shadow: 1px 1px 10px 5px;
+	width: 100%;
+}
+.text{
+	max-width: 500px;
+	min-height: 500px;
+	border: 2px solid #fff;
+	box-sizing: border-box;
+	padding: 20px;
+	border-radius: 80px;
+}
+.text h1{
+	text-align: center;
+	color: #fff;
+}
+.text p{
+	color: #fff;
+}
+.about-btn{
+	color: #fff;
+	font-size: 15px;
+	font-family: oswald;
+}
+.about-btn:hover{
+	color: #fff;
+}
+.about-group{
+	max-width: 100%;
+	min-height: 500px;
+	background-color: #000; 
+}
